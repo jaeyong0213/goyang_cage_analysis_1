@@ -8,7 +8,7 @@ from geopy.distance import geodesic
 # 1. 데이터 불러오기
 # ---------------------------------------------------
 #df = pd.read_csv("고양시_카페_10개시점.csv", encoding="utf-8")
-csv_url = "https://raw.githubusercontent.com/jaeyong0213/goyang_cage_analysis_1/main/goyang_cafe_10.csv"
+csv_url = "https://raw.githubusercontent.com/jaeyong0213/goyang_cafe_analysis_1/main/goyang_cafe_10.csv"
 df = pd.read_csv(csv_url, encoding='utf-8')
 
 
@@ -120,6 +120,7 @@ if clicked["last_clicked"] is not None:
             st.info("🙂 경쟁이 심하지만 도전할 수 있는 위치입니다.")
         else:
             st.error("⚠️ 경쟁이 매우 심한 위치입니다. 신중한 검토가 필요합니다.")
+
 
 
 
